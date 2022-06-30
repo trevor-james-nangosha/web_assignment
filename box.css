@@ -1,0 +1,52 @@
+img{
+    height: inherit;
+    width: inherit;
+}
+
+.container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "My-bio . My-photo"
+        ". My-education-history ."
+        "Your-hobbies . Contact-me";
+}
+
+.section{
+    height: 300px;
+    width: 450px;
+    text-align: center;
+}
+
+.section:hover{
+    background-color: red;
+}
+
+.My-bio {
+     grid-area: My-bio; 
+     background-color: darkgreen;
+}
+
+.My-education-history {
+     grid-area: My-education-history; 
+     background-color: darkslateblue;
+}
+
+.Your-hobbies {
+     grid-area: Your-hobbies; 
+     background-color: dodgerblue;
+}
+
+.Contact-me {
+     grid-area: Contact-me; 
+     background-color: bisque;
+}
+
+.My-photo {
+     grid-area: My-photo; 
+     background-color: rgba(9, 135, 238, 0.685);
+}
+
